@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="8oE-wY-LHh">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <scenes>
+        <!--Slide Menu Navigation Controller-->
+        <scene sceneID="b3l-Hs-hri">
+            <objects>
+                <navigationController id="8oE-wY-LHh" customClass="SlideMenuNavigationController" customModule="SMApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="JD6-de-KpW">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="MZr-QJ-FC1" kind="relationship" relationship="rootViewController" id="hAT-VA-yaN"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ZrH-YF-4AC" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-288" y="354"/>
+        </scene>
+        <!--Заголовок-->
+        <scene sceneID="XPy-Ry-se9">
+            <objects>
+                <viewController storyboardIdentifier="NumberViewController" id="MZr-QJ-FC1" customClass="ViewController" customModule="SMApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="HH6-at-d7O"/>
+                        <viewControllerLayoutGuide type="bottom" id="R7w-bi-CS8"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="n0l-aW-tgG">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1Uu-fe-AVR">
+                                <rect key="frame" x="286" y="273" width="28" height="54"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="45"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="1Uu-fe-AVR" firstAttribute="centerX" secondItem="n0l-aW-tgG" secondAttribute="centerX" id="Z2g-KZ-ErM"/>
+                            <constraint firstItem="1Uu-fe-AVR" firstAttribute="centerY" secondItem="n0l-aW-tgG" secondAttribute="centerY" id="zZE-iJ-Ohs"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Заголовок" id="Hig-gH-RiN"/>
+                    <connections>
+                        <outlet property="numberLabel" destination="1Uu-fe-AVR" id="0eR-49-0cA"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="RFO-pE-Yat" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="467" y="354"/>
+        </scene>
+    </scenes>
+</document>
